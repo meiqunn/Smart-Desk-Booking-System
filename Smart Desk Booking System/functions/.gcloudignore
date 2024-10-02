@@ -1,0 +1,33 @@
+# Node.js modules
+node_modules/
+
+# Log files
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# IDE and Editor folders
+.vscode/
+.idea/
+
+# Coverage files
+coverage/
+
+# OS files
+.DS_Store
+
+# Build and dist folders
+.next/
+.cache/
+dist/
+build/
+
+# Git folder
+.git/
+
+# Test files
+*.test.js
+*.md

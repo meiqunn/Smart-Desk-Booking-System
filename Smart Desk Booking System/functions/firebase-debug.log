@@ -1,0 +1,71 @@
+[debug] [2024-06-11T13:22:33.820Z] ----------------------------------------------------------------------
+[debug] [2024-06-11T13:22:33.821Z] Command:       /Users/teymeiqun/.nvm/versions/node/v18.20.3/bin/node /Users/teymeiqun/.nvm/versions/node/v18.20.3/bin/firebase init functions
+[debug] [2024-06-11T13:22:33.821Z] CLI Version:   13.11.2
+[debug] [2024-06-11T13:22:33.821Z] Platform:      darwin
+[debug] [2024-06-11T13:22:33.821Z] Node Version:  v18.20.3
+[debug] [2024-06-11T13:22:33.822Z] Time:          Tue Jun 11 2024 21:22:33 GMT+0800 (Malaysia Time)
+[debug] [2024-06-11T13:22:33.822Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-11T13:22:33.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-11T13:22:33.860Z] > authorizing via signed-in user (teymeiqun02@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/teymeiqun/Downloads/flutter/Smart Desk Booking System
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-11T13:22:33.862Z] Using project from CLI flag: fire-setup-b5eb2
+[debug] [2024-06-11T13:22:33.863Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fire-setup-b5eb2 [none]
+[debug] [2024-06-11T13:22:34.439Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fire-setup-b5eb2 200
+[debug] [2024-06-11T13:22:34.440Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fire-setup-b5eb2 {"projectId":"fire-setup-b5eb2","projectNumber":"828620305422","displayName":"fire-setup","name":"projects/fire-setup-b5eb2","resources":{"hostingSite":"fire-setup-b5eb2","realtimeDatabaseInstance":"fire-setup-b5eb2-default-rtdb"},"state":"ACTIVE","etag":"1_7b33a8c9-f1b8-42a8-8278-4810b1f9318e"}
+[info] i  Using project fire-setup-b5eb2 (fire-setup) 
+[info] 
+=== Functions Setup
+[debug] [2024-06-11T13:22:34.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-11T13:22:34.460Z] > authorizing via signed-in user (teymeiqun02@gmail.com)
+[debug] [2024-06-11T13:22:34.461Z] [iam] checking project fire-setup-b5eb2 for permissions ["firebase.projects.get"]
+[debug] [2024-06-11T13:22:34.462Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-setup-b5eb2:testIamPermissions [none]
+[debug] [2024-06-11T13:22:34.462Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-setup-b5eb2:testIamPermissions x-goog-quota-user=projects/fire-setup-b5eb2
+[debug] [2024-06-11T13:22:34.462Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-setup-b5eb2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-11T13:22:35.680Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-setup-b5eb2:testIamPermissions 200
+[debug] [2024-06-11T13:22:35.680Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-setup-b5eb2:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-11T13:22:35.681Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-11T13:22:35.681Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/fire-setup-b5eb2
+[debug] [2024-06-11T13:22:35.683Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-11T13:22:35.683Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/fire-setup-b5eb2
+[debug] [2024-06-11T13:22:37.228Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-11T13:22:37.228Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-11T13:22:37.253Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-11T13:22:37.254Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fire-setup-b5eb2/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default, codebase
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] functions.codebase must be unique but 'codebase' was used more than once.
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[error] functions.codebase must be unique but 'codebase' was used more than once.
